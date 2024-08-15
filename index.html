@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPER FRIP STORE</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <header>
+        <h1>SUPER FRIP STORE</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="home">
+        <h2>Welcome to Our Store</h2>
+        <p>Find unique, high-quality used clothes and home items at great prices!</p>
+    </section>
+    
+    <section id="shop">
+        <h2>Shop</h2>
+        <input type="text" id="search-bar" placeholder="Search items...">
+        
+        <label for="filter-category">Filter by Category:</label>
+        <select id="filter-category">
+            <option value="all">All</option>
+            <option value="men">Men</option>
+            <option value="women">Women</option>
+            <option value="baby">Baby Clothes</option>
+            <option value="bedsheets">Bedsheets</option>
+            <option value="curtains">Curtains</option>
+        </select>
+
+        <div id="men-clothing">
+            <h3>Men's Clothing</h3>
+            <div id="men-products" class="product-list">
+                <div class="product-item" data-id="1" data-category="men" data-image="C:\Users\famil\Documents\my projet 2\images.JFIF" data-price="$25.00" data-size="L">
+                    <img src="C:\Users\famil\Documents\my projet 2\images.JFIF" alt="Men's Shirt">
+                    <h3>Men's Casual Shirt</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="2" data-category="men" data-image="C:\Users\famil\Documents\my projet 2\men-s-jackets.JPG" data-price="$60.00" data-size="M">
+                    <img src="C:\Users\famil\Documents\my projet 2\men-s-jackets.JPG" alt="Men's Jacket">
+                    <h3>Men's Winter Jacket</h3>
+                    <p>$60.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="3" data-category="men" data-image="C:\Users\famil\Documents\my projet 2\A09640020-front-gstk.JFIF" data-price="$40.00" data-size="32">
+                    <img src="C:\Users\famil\Documents\my projet 2\A09640020-front-gstk.JFIF" alt="Men's Jeans">
+                    <h3>Men's Slim Fit Jeans</h3>
+                    <p>$40.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="4" data-category="men" data-image="https://via.placeholder.com/600x600?text=Men's+Sweater" data-price="$35.00" data-size="L">
+                    <img src="https://via.placeholder.com/150?text=Men's+Sweater" alt="Men's Sweater">
+                    <h3>Men's Knit Sweater</h3>
+                    <p>$35.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="5" data-category="men" data-image="https://via.placeholder.com/600x600?text=Men's+T-Shirt" data-price="$20.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Men's+T-Shirt" alt="Men's T-Shirt">
+                    <h3>Men's Graphic T-Shirt</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="6" data-category="men" data-image="https://via.placeholder.com/600x600?text=Men's+Shorts" data-price="$25.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Men's+Shorts" alt="Men's Shorts">
+                    <h3>Men's Summer Shorts</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="7" data-category="men" data-image="https://via.placeholder.com/600x600?text=Men's+Blazer" data-price="$80.00" data-size="L">
+                    <img src="https://via.placeholder.com/150?text=Men's+Blazer" alt="Men's Blazer">
+                    <h3>Men's Formal Blazer</h3>
+                    <p>$80.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="8" data-category="men" data-image="https://via.placeholder.com/600x600?text=Men's+Suits" data-price="$120.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Men's+Suits" alt="Men's Suits">
+                    <h3>Men's Business Suit</h3>
+                    <p>$120.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="9" data-category="men" data-image="https://via.placeholder.com/600x600?text=Men's+Polo+Shirt" data-price="$30.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Men's+Polo+Shirt" alt="Men's Polo Shirt">
+                    <h3>Men's Polo Shirt</h3>
+                    <p>$30.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="10" data-category="men" data-image="https://via.placeholder.com/600x600?text=Men's+Cardigan" data-price="$50.00" data-size="L">
+                    <img src="https://via.placeholder.com/150?text=Men's+Cardigan" alt="Men's Cardigan">
+                    <h3>Men's Wool Cardigan</h3>
+                    <p>$50.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+                <!-- Women’s Clothing Section -->
+        <div id="women-clothing">
+            <h3>Women's Clothing</h3>
+            <div id="women-products" class="product-list">
+                <div class="product-item" data-id="4" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Dress" data-price="$35.00" data-size="S">
+                    <img src="https://via.placeholder.com/150?text=Women's+Dress" alt="Women's Dress">
+                    <h3>Women's Summer Dress</h3>
+                    <p>$35.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="5" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Sweater" data-price="$45.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Women's+Sweater" alt="Women's Sweater">
+                    <h3>Women's Cozy Sweater</h3>
+                    <p>$45.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="6" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Skirt" data-price="$30.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Women's+Skirt" alt="Women's Skirt">
+                    <h3>Women's A-Line Skirt</h3>
+                    <p>$30.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="7" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Jacket" data-price="$50.00" data-size="S">
+                    <img src="https://via.placeholder.com/150?text=Women's+Jacket" alt="Women's Jacket">
+                    <h3>Women's Leather Jacket</h3>
+                    <p>$50.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="8" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Pants" data-price="$40.00" data-size="S">
+                    <img src="https://via.placeholder.com/150?text=Women's+Pants" alt="Women's Pants">
+                    <h3>Women's Dress Pants</h3>
+                    <p>$40.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="9" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Blouse" data-price="$25.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Women's+Blouse" alt="Women's Blouse">
+                    <h3>Women's Silk Blouse</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="10" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Cardigan" data-price="$35.00" data-size="L">
+                    <img src="https://via.placeholder.com/150?text=Women's+Cardigan" alt="Women's Cardigan">
+                    <h3>Women's Cotton Cardigan</h3>
+                    <p>$35.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="11" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Coat" data-price="$70.00" data-size="L">
+                    <img src="https://via.placeholder.com/150?text=Women's+Coat" alt="Women's Coat">
+                    <h3>Women's Wool Coat</h3>
+                    <p>$70.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="12" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Jumpsuit" data-price="$55.00" data-size="M">
+                    <img src="https://via.placeholder.com/150?text=Women's+Jumpsuit" alt="Women's Jumpsuit">
+                    <h3>Women's Jumpsuit</h3>
+                    <p>$55.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="13" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Kimono" data-price="$40.00" data-size="One Size">
+                    <img src="https://via.placeholder.com/150?text=Women's+Kimono" alt="Women's Kimono">
+                    <h3>Women's Kimono</h3>
+                    <p>$40.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="14" data-category="women" data-image="https://via.placeholder.com/600x600?text=Women's+Scarf" data-price="$15.00" data-size="One Size">
+                    <img src="https://via.placeholder.com/150?text=Women's+Scarf" alt="Women's Scarf">
+                    <h3>Women's Wool Scarf</h3>
+                    <p>$15.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Baby Clothes Section -->
+        <div id="baby-clothing">
+            <h3>Baby Clothes</h3>
+            <div id="baby-products" class="product-list">
+                <div class="product-item" data-id="7" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Onesie" data-price="$15.00" data-size="6M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Onesie" alt="Baby Onesie">
+                    <h3>Baby Onesie</h3>
+                    <p>$15.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="8" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Jacket" data-price="$20.00" data-size="12M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Jacket" alt="Baby Jacket">
+                    <h3>Baby Winter Jacket</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="9" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Dress" data-price="$18.00" data-size="9M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Dress" alt="Baby Dress">
+                    <h3>Baby Girl Dress</h3>
+                    <p>$18.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="10" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Hat" data-price="$10.00" data-size="One Size">
+                    <img src="https://via.placeholder.com/150?text=Baby+Hat" alt="Baby Hat">
+                    <h3>Baby Knitted Hat</h3>
+                    <p>$10.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="11" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Booties" data-price="$12.00" data-size="0-3M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Booties" alt="Baby Booties">
+                    <h3>Baby Booties</h3>
+                    <p>$12.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="12" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Sweater" data-price="$22.00" data-size="6M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Sweater" alt="Baby Sweater">
+                    <h3>Baby Sweater</h3>
+                    <p>$22.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="13" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Pants" data-price="$14.00" data-size="12M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Pants" alt="Baby Pants">
+                    <h3>Baby Pants</h3>
+                    <p>$14.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="14" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Romper" data-price="$16.00" data-size="6M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Romper" alt="Baby Romper">
+                    <h3>Baby Romper</h3>
+                    <p>$16.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="15" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Overalls" data-price="$28.00" data-size="9M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Overalls" alt="Baby Overalls">
+                    <h3>Baby Overalls</h3>
+                    <p>$28.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="16" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Boots" data-price="$18.00" data-size="3-6M">
+                    <img src="https://via.placeholder.com/150?text=Baby+Boots" alt="Baby Boots">
+                    <h3>Baby Winter Boots</h3>
+                    <p>$18.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="17" data-category="baby" data-image="https://via.placeholder.com/600x600?text=Baby+Gloves" data-price="$8.00" data-size="One Size">
+                    <img src="https://via.placeholder.com/150?text=Baby+Gloves" alt="Baby Gloves">
+                    <h3>Baby Gloves</h3>
+                    <p>$8.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bedsheets Section -->
+        <div id="bedsheets">
+            <h3>Bedsheets</h3>
+            <div id="bedsheets-products" class="product-list">
+                <div class="product-item" data-id="10" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=King+Size+Sheet" data-price="$40.00" data-size="King">
+                    <img src="https://via.placeholder.com/150?text=King+Size+Sheet" alt="King Size Sheet">
+                    <h3>King Size Bedsheet</h3>
+                    <p>$40.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="11" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Queen+Size+Sheet" data-price="$35.00" data-size="Queen">
+                    <img src="https://via.placeholder.com/150?text=Queen+Size+Sheet" alt="Queen Size Sheet">
+                    <h3>Queen Size Bedsheet</h3>
+                    <p>$35.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="12" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Twin+Size+Sheet" data-price="$25.00" data-size="Twin">
+                    <img src="https://via.placeholder.com/150?text=Twin+Size+Sheet" alt="Twin Size Sheet">
+                    <h3>Twin Size Bedsheet</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="13" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Cotton+Sheet" data-price="$30.00" data-size="King">
+                    <img src="https://via.placeholder.com/150?text=Cotton+Sheet" alt="Cotton Sheet">
+                    <h3>Cotton Bedsheet</h3>
+                    <p>$30.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="14" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Silk+Sheet" data-price="$60.00" data-size="Queen">
+                    <img src="https://via.placeholder.com/150?text=Silk+Sheet" alt="Silk Sheet">
+                    <h3>Silk Bedsheet</h3>
+                    <p>$60.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="15" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Flannel+Sheet" data-price="$45.00" data-size="King">
+                    <img src="https://via.placeholder.com/150?text=Flannel+Sheet" alt="Flannel Sheet">
+                    <h3>Flannel Bedsheet</h3>
+                    <p>$45.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="16" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Polyester+Sheet" data-price="$20.00" data-size="Twin">
+                    <img src="https://via.placeholder.com/150?text=Polyester+Sheet" alt="Polyester Sheet">
+                    <h3>Polyester Bedsheet</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="17" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Floral+Sheet" data-price="$30.00" data-size="Queen">
+                    <img src="https://via.placeholder.com/150?text=Floral+Sheet" alt="Floral Sheet">
+                    <h3>Floral Bedsheet</h3>
+                    <p>$30.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="18" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Striped+Sheet" data-price="$25.00" data-size="King">
+                    <img src="https://via.placeholder.com/150?text=Striped+Sheet" alt="Striped Sheet">
+                    <h3>Striped Bedsheet</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="19" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Solid+Sheet" data-price="$22.00" data-size="Twin">
+                    <img src="https://via.placeholder.com/150?text=Solid+Sheet" alt="Solid Sheet">
+                    <h3>Solid Bedsheet</h3>
+                    <p>$22.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="20" data-category="bedsheets" data-image="https://via.placeholder.com/600x600?text=Printed+Sheet" data-price="$32.00" data-size="Queen">
+                    <img src="https://via.placeholder.com/150?text=Printed+Sheet" alt="Printed Sheet">
+                    <h3>Printed Bedsheet</h3>
+                    <p>$32.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Curtains Section -->
+        <div id="curtains">
+            <h3>Curtains</h3>
+            <div id="curtains-products" class="product-list">
+                <div class="product-item" data-id="7" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Sheer+Curtains" data-price="$20.00" data-size="54x84">
+                    <img src="https://via.placeholder.com/150?text=Sheer+Curtains" alt="Sheer Curtains">
+                    <h3>Sheer Curtains</h3>
+                    <p>$20.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="8" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Blackout+Curtains" data-price="$35.00" data-size="52x84">
+                    <img src="https://via.placeholder.com/150?text=Blackout+Curtains" alt="Blackout Curtains">
+                    <h3>Blackout Curtains</h3>
+                    <p>$35.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="9" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Velvet+Curtains" data-price="$40.00" data-size="50x96">
+                    <img src="https://via.placeholder.com/150?text=Velvet+Curtains" alt="Velvet Curtains">
+                    <h3>Velvet Curtains</h3>
+                    <p>$40.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="10" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Printed+Curtains" data-price="$25.00" data-size="54x84">
+                    <img src="https://via.placeholder.com/150?text=Printed+Curtains" alt="Printed Curtains">
+                    <h3>Printed Curtains</h3>
+                    <p>$25.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="11" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Patterned+Curtains" data-price="$30.00" data-size="96x108">
+                    <img src="https://via.placeholder.com/150?text=Patterned+Curtains" alt="Patterned Curtains">
+                    <h3>Patterned Curtains</h3>
+                    <p>$30.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="12" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Grommet+Curtains" data-price="$22.00" data-size="84x84">
+                    <img src="https://via.placeholder.com/150?text=Grommet+Curtains" alt="Grommet Curtains">
+                    <h3>Grommet Curtains</h3>
+                    <p>$22.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="13" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Sheer+Voile+Curtains" data-price="$18.00" data-size="50x84">
+                    <img src="https://via.placeholder.com/150?text=Sheer+Voile+Curtains" alt="Sheer Voile Curtains">
+                    <h3>Sheer Voile Curtains</h3>
+                    <p>$18.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="14" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Thermal+Curtains" data-price="$28.00" data-size="50x84">
+                    <img src="https://via.placeholder.com/150?text=Thermal+Curtains" alt="Thermal Curtains">
+                    <h3>Thermal Curtains</h3>
+                    <p>$28.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="15" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Outdoor+Curtains" data-price="$50.00" data-size="84x84">
+                    <img src="https://via.placeholder.com/150?text=Outdoor+Curtains" alt="Outdoor Curtains">
+                    <h3>Outdoor Curtains</h3>
+                    <p>$50.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-item" data-id="16" data-category="curtains" data-image="https://via.placeholder.com/600x600?text=Roman+Shades" data-price="$45.00" data-size="72x72">
+                    <img src="https://via.placeholder.com/150?text=Roman+Shades" alt="Roman Shades">
+                    <h3>Roman Shades</h3>
+                    <p>$45.00</p>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+                <!-- Add more items as needed -->
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We offer a curated selection of gently used clothing and home items. Our goal is to provide high-quality, sustainable products to our customers.</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-image" src="" alt="Product Image">
+            <h3 id="modal-title"></h3>
+            <p id="modal-price"></p>
+            <p id="modal-size"></p>
+        </div>
+    </div>
+    
+    <script src="index2.js"></script>
+</body>
+</html>
