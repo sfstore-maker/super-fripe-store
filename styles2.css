@@ -1,0 +1,560 @@
+/* Reset some default styles for better centering */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styles */
+body {
+    font-family: Comic Sans MS, Comic Sans, cursive;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+}
+
+/* Header Styles */
+header {
+    width: 105%;
+    background-color: #2a2a2a;
+    color: rgb(255, 145, 0);
+    padding: 50px 0;
+    display: flex;
+    padding: 0 150px;
+    flex-direction: row;
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Space out items */
+    flex-wrap: nowrap;
+    padding-bottom: 50px;
+    padding-top: 50px; /* Add some horizontal padding */
+    align-content: center;
+}
+
+header h1 {
+    margin: 0; /* Remove default margin */
+}
+
+nav {
+    flex-grow: 1; /* Allow navigation to take remaining space */
+    text-align: center; /* Center the navigation items */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 50px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+/* Main Section Styles */
+section {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+/* Search Bar Styles */
+#search-bar {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+/* Filter Dropdown Styles */
+#filter-category {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+}
+
+/* Product List Styles */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Modal Styles */
+#product-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black fallback */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    border: 1px solid #888;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 800px;
+    text-align: center;
+}
+
+.modal-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#buy-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #3a3a3a;
+    cursor: pointer;
+}
+
+#buy-button:hover {
+    background-color: #3a3a3a;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+}
+
+/* Contact Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: #3a3a3a;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #3a3a3a;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #3a3a3a;
+    color: rgb(51, 51, 51);
+    padding: 10px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+/* Cart Item Styles */
+.cart-item {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-item img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+.cart-item p {
+    margin: 5px 0;
+}
+
+.remove-item, .cancel-item {
+    background-color: #e74c3c; /* Red for remove button */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.remove-item:hover {
+    background-color: #c0392b;
+}
+
+.cancel-item {
+    background-color: #f39c12; /* Yellow for cancel button */
+}
+
+.cancel-item:hover {
+    background-color: #e67e22;
+}
+
+/* Total Price Styles */
+.cart-total {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Checkout Button Styles */
+#checkout-button {
+    padding: 10px 20px;
+    display: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #27ae60;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+#checkout-button:hover {
+    background-color: #2ecc71;
+}
+/* Ensure modal is hidden by default */
+#product-modal {
+    display: none;
+    /* Other styling */
+}
+/* General Styles for Product Cards */
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 250px;
+    margin: 20px;
+}
+
+/* Product Image */
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Product Details */
+.product-item h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-item p {
+    color: #777;
+    font-size: 1.1em;
+    margin: 0;
+}
+
+/* Add to Cart Button */
+.product-item button {
+    background-color: #ff9100;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    margin: 10px 0;
+}
+
+.product-item button:hover {
+    background-color: #bd6b00;
+}
+
+/* Hover Effect for Product Card */
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+/* Search Bar Styles */
+#search-bar {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: border-color 0.3s;
+}
+
+#search-bar:focus {
+    border-color: #ff9100;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+/* Filter Dropdown Styles */
+#filter-category {
+    padding: 12px 20px;
+    border: 1px solid #ddd;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 200px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: border-color 0.3s;
+}
+
+#filter-category:focus {
+    border-color: #ff9100;
+    outline: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+/* Modal container (hidden by default) */
+#product-modal {
+    display: none; /* Hide by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal content styling */
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    position: relative; /* For positioning the close button */
+}
+
+/* Close button styling */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+}
+
+/* Product image styling */
+#modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* Product title styling */
+#modal-title {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Product price styling */
+#modal-price {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0;
+}
+
+/* Product size styling */
+#modal-size {
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0;
+}
+/* Checkout Page Styles */
+#cart-summary {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+#payment-method {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+#payment-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#payment-form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+}
+
+#payment-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #fff;
+    cursor: pointer;
+}
+
+#payment-form button:hover {
+    background-color: #555;
+}
+
+.checkout-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3a3a3a;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #555;
+}
+/* Styles for Proceed to Payment Button */
+.btn-primary {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4CAF50; /* Green color */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-top: 20px;
+}
+
+.btn-primary:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.btn-primary:active {
+    background-color: #388e3c; /* Even darker green when clicked */
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:focus {
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); /* Add custom focus shadow */
+}
